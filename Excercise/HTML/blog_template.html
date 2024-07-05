@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body, h1, h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+.header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.column {
+  padding: 0 16px;
+}
+.column.main {
+  flex: 66.66%;
+  max-width: 66.66%;
+}
+.column.sidebar {
+  flex: 33.33%;
+  max-width: 33.33%;
+}
+.card {
+  background-color: #fff;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+.card h5 {
+  font-size: 18px;
+  color: #888;
+  margin: 8px 0;
+}
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #444;
+}
+.tags span {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.tags span.active {
+  background-color: #000;
+  color: #fff;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0;
+  margin-top: 32px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .header h1 {
+    font-size: 28px;
+  }
+  .header p {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1><b>MY BLOG</b></h1>
+    <p>Welcome to the blog of <span>unknown</span></p>
+  </div>
+
+  <!-- Main content -->
+  <div class="row">
+
+    <!-- Blog entries -->
+    <div class="column main">
+
+      <!-- Blog entry 1 -->
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature">
+        <h3><b>TITLE HEADING</b></h3>
+        <h5>Title description, <span>April 7, 2014</span></h5>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <button class="button">READ MORE »</button>
+      </div>
+
+      <!-- Blog entry 2 -->
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="Bridge">
+        <h3><b>BLOG ENTRY</b></h3>
+        <h5>Title description, <span>April 2, 2014</span></h5>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <button class="button">READ MORE »</button>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="column sidebar">
+
+      <!-- About Card -->
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" style="width:100%">
+        <h4><b>My Name</b></h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      </div>
+
+      <!-- Popular Posts -->
+      <div class="card">
+        <h4>Popular Posts</h4>
+        <ul>
+          <li><img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" style="width:50px; vertical-align:middle; margin-right:10px;"> <span>Lorem</span><br><span>Sed mattis nunc</span></li>
+          <li><img src="https://www.w3schools.com/w3images/gondol.jpg" alt="Image" style="width:50px; vertical-align:middle; margin-right:10px;"> <span>Ipsum</span><br><span>Praes tinci sed</span></li> 
+          <li><img src="https://www.w3schools.com/w3images/skies.jpg" alt="Image" style="width:50px; vertical-align:middle; margin-right:10px;"> <span>Dorum</span><br><span>Ultricies congue</span></li>   
+          <li><img src="https://www.w3schools.com/w3images/rock.jpg" alt="Image" style="width:50px; vertical-align:middle; margin-right:10px;"> <span>Mingsum</span><br><span>Lorem ipsum dipsum</span></li>  
+        </ul>
+      </div>
+
+      <!-- Tags -->
+      <div class="card">
+        <h4>Tags</h4>
+        <div class="tags">
+          <span class="active">Travel</span>
+          <span>New York</span>
+          <span>London</span>
+          <span>IKEA</span>
+          <span>NORWAY</span>
+          <span>DIY</span>
+          <span>Ideas</span>
+          <span>Baby</span>
+          <span>Family</span>
+          <span>News</span>
+          <span>Clothing</span>
+          <span>Shopping</span>
+          <span>Sports</span>
+          <span>Games</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <button class="button" disabled>Previous</button>
+  <button class="button">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</div>
+
+</body>
+</html>
