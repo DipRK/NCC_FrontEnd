@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>jQuery Syntax Exercise</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+ <!-- <p class="text">Paragraph 1</p>
+ <p class="text">Paragraph 2</p>
+ <p class="text">Paragraph 3</p>
+ <button id="hideButton">Hide Paragraphs</button> -->
+ <button id="Button"> Alert Button </button>
+ <div id="area" style="width: 50px; height:50px">This is Div</div>
+ <script>
+    /*$(document).ready(function() {
+        $('p').css('color', 'red'); // Change text color of all paragraphs to red
+        $('#hideButton').click(function() {
+        $('p').hide(); // Hide all paragraphs when button is clicked
+        });
+       }); */
+    $('#Button').click(function(){
+        alert("This is an alert");
+    });
+    $('#area').hover(function(){
+        $('#area').css('color','red');
+    });
+ </script>
+</body>
+</html>
